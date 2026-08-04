@@ -4,21 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anshadinta Site</title>
+    
+    <!-- CSS Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Header design */
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 40px 20px;
+        }
+        /* main content */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0,1);
+            border-radius: 8px;
+        }
+        /*standard whatsapp button */
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px
+        }
+        
+        /* Floating Whatsapp Button */
+        .float-whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0,3);
+            z-index: 1000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        
+        .float-whatsapp:hover {
+            background-color: #1eb854;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World</h1>
-    <p>It is my first website.</p>
-    <h2>guys are ready for a fight</h2>
-    <p2>we make everything<p2>
-</body>
-</body2>
-      <h1>Hello, World</h1>
-      <p>It is my first website.</p>
-      <h2>guys are ready for a fight</h2>
-      <p2>we make everything<p2>
-      
-      <img src="1782727201935(1).png" alt="my pic">
-      <img src="monster.png" alt="my pic">
-</body2>
-</html>
 
+    <!--Header Section-->
+    <header>
+        <h1>Hello, World</h1>
+        <p>It is my first website.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container"> 
+    <h2>Anshad Nasar</h2>
+    <p>For More Information. feel free to chat with us directly via whatsapp by clicking the button below.</p>
+    
+    <!-- Standard Whatsapp Link Button -->
+    <a href="https://wa.me/919747672545?text=hello,%20I%20would%20like%20more%20information"
+       target="_blank"
+       class="whatsapp-btn">
+       Message us on Whatsapp
+    </a>
+</div>
+
+<!--Floating whtsapp Icon -->
+<a href="https://wa.me/919747672545?text=hello,%20I%20need%20assistance"
+   class="float-whatsapp"
+   target="_blank"
+   title="Whatsapp Chat">
+   <!-- Whatsapp Icon (SVG) -->
+   <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946-.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892 11.893 11.892-1.99-.001-3.951-.5-5.688-1.488-1.4481-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+   </svg>
+</a>
+<img src="1782727201935(1).png" alt="my pic">
+</body>
+</html>
